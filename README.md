@@ -1,56 +1,33 @@
-# 🧱 Revisão de POO (Programação Orientada a Objetos)
+🧠 Revisão Rápida: Programação Orientada a Objetos (POO)
+Esse repositório é uma revisão direta ao ponto sobre os principais conceitos de POO (Programação Orientada a Objetos). Perfeito pra fixar conteúdo, revisar antes de provas ou aplicar em projetos!
 
-Este repositório reúne os conceitos mais importantes sobre **Programação Orientada a Objetos**, com resumos, exemplos e exercícios. Ideal pra quem quer revisar a base sólida da programação moderna.
+📌 Conceito Geral
+POO é um paradigma de programação que estrutura o código em torno de objetos, que combinam dados (atributos) e comportamentos (métodos).
 
----
-
-## 📌 O que é POO?
-
-POO é um paradigma de programação que organiza o código baseado em **objetos**, que são instâncias de **classes**. Ele aproxima a programação do mundo real, tornando o código mais modular, reutilizável e fácil de manter.
-
----
-
-## 🧱 Pilares da POO
-
-### 🔹 1. **Abstração**
-Focar apenas nos detalhes essenciais.  
-➡️ Exemplo: Um objeto `Carro` não precisa expor como o motor funciona, só que ele liga, acelera e freia.
-
-### 🔹 2. **Encapsulamento**
-Proteger os dados, deixando acessível apenas o necessário.  
-➡️ Atributos privados com métodos `get` e `set`.
-
-### 🔹 3. **Herança**
-Permitir que uma classe herde características de outra.  
-➡️ `class Aluno extends Pessoa {}`
-
-### 🔹 4. **Polimorfismo**
-Objetos diferentes podem responder de formas diferentes ao **mesmo método**.  
-➡️ `animal.fazerSom()` pode emitir sons diferentes dependendo da classe (`Cachorro`, `Gato`...).
-
----
-
-## 🛠️ Componentes Básicos
-
-- **Classe**: Molde, definição de como o objeto deve ser.
-- **Objeto**: Instância da classe (um “exemplar”).
-- **Método**: Ação que o objeto pode executar.
-- **Atributo**: Característica que o objeto possui.
-
----
-
-## 🧑‍💻 Exemplo (JavaScript)
-```js
+🧱 Pilares da POO
+Pilar	Explicação Curta	Exemplo Simples
+Abstração	Foca só no essencial	carro.ligar() sem saber o motor
+Encapsulamento	Protege os dados internos	Atributos privados e getters/setters
+Herança	Reutiliza código de outra classe	class Filho extends Pai
+Polimorfismo	Mesmo método, ações diferentes	animal.fazerSom() varia
+🧠 Conceitos-Chave
+Classe: molde que define atributos e métodos
+Objeto: instância da classe (é o que "vive")
+Atributos: dados guardados pelo objeto
+Métodos: funções que o objeto pode executar
+Construtor: método especial pra criar objetos
+this: referência ao próprio objeto
+⚙️ Sintaxe Base (JavaScript Exemplo)
 class Pessoa {
   constructor(nome, idade) {
     this.nome = nome;
     this.idade = idade;
   }
 
-  falar() {
-    console.log(`Olá, meu nome é ${this.nome}`);
+  apresentar() {
+    console.log(`Sou ${this.nome} e tenho ${this.idade} anos`);
   }
 }
 
-const igor = new Pessoa("Igor", 17);
-igor.falar(); // Olá, meu nome é Igor
+const aluno = new Pessoa("Igor", 17);
+aluno.apresentar(); // Sou Igor e tenho 17 anos
